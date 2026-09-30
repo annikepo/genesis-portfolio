@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+  background-color: $color-bg;
+
+  .logo {
+    font-family: $font-family;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $color-dark;
+  }
+
+  .nav_list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+
+    a {
+      font-family: $font-family;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: $color-muted;
+      transition: color 0.2s ease;
+
+      &.active,
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+}

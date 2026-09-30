@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  background-color: #ffffff;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+  background-color: #ffffff;
+}
+.header .logo {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #111111;
+}
+.header .nav_list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+.header .nav_list a {
+  font-family: "Mulish", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #777777;
+  transition: color 0.2s ease;
+}
+.header .nav_list a.active, .header .nav_list a:hover {
+  color: #111111;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  /* Hero Intro Titles */
+}
+.main .hero-title, .main .contact-intro {
+  margin-bottom: 50px;
+}
+.main .hero-title h1, .main .contact-intro h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #111111;
+}
+.main {
+  /* Home Masonry Grid (10 Images) */
+}
+.main .masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.main .masonry-grid .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main {
+  /* Quote Section */
+}
+.main .quote-section {
+  margin: 50px 0;
+  max-width: 420px;
+}
+.main .quote-section p {
+  font-family: "Mulish", sans-serif;
+  font-size: 0.85rem;
+  color: #777777;
+  line-height: 1.6;
+}
+.main {
+  /* Project Details Page Styles */
+}
+.main.project-page .project-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.main.project-page .project-header .project-title {
+  flex: 2;
+}
+.main.project-page .project-header .project-title h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.main.project-page .project-header .project-title p {
+  font-family: "Mulish", sans-serif;
+  color: #777777;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.main.project-page .project-header .project-meta {
+  flex: 1;
+}
+.main.project-page .project-header .project-meta .meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Mulish", sans-serif;
+  font-size: 0.85rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #777777;
+}
+.main.project-page .project-header .project-meta .meta-row strong {
+  color: #111111;
+}
+.main.project-page .hero-banner img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+.main.project-page .project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.main.project-page .project-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.main {
+  /* Contact Page Styles */
+}
+.main.contact-page .map-section img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+  border-top: 1px solid #e0e0e0;
+}
+.footer .brand {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.footer .footer-right a {
+  font-family: "Mulish", sans-serif;
+  font-size: 0.85rem;
+  color: #777777;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.footer .footer-right a:hover {
+  color: #111111;
+}
+
+/*# sourceMappingURL=index.css.map */

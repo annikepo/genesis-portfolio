@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+  border-top: 1px solid $color-border;
+
+  .brand {
+    font-family: $font-family;
+    font-weight: 800;
+    font-size: 0.9rem;
+  }
+
+  .footer-right {
+    a {
+      font-family: $font-family;
+      font-size: 0.85rem;
+      color: $color-muted;
+      margin-left: 20px;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+}
