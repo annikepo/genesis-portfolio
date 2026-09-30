@@ -1,3 +1,5 @@
+@use 'fonts' as *;
+
 .main {
   max-width: 1000px;
   margin: 0 auto;
@@ -16,7 +18,7 @@
     }
   }
 
-  /* Home Masonry Grid (10 Images) */
+  /* Home Masonry Grid */
   .masonry-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,6 +97,17 @@
       margin-bottom: 25px;
     }
 
+    .project-description {
+      p {
+        font-family: $font-family;
+        font-size: 0.9rem;
+        color: $color-muted;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* 3 Detail Images Gallery */
     .project-gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
