@@ -5,44 +5,169 @@
   margin: 0 auto;
   padding: 40px 20px 80px;
 
-  /* Hero Intro Titles */
-  .hero-title, .contact-intro {
+  /* Hero Header Layout */
+  .hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
     margin-bottom: 50px;
 
-    h1 {
-      font-family: $font-family;
-      font-weight: 800;
-      font-size: 1.8rem;
-      line-height: 1.4;
-      color: $color-dark;
+    .hero-title {
+      flex: 2;
+
+      .tagline {
+        display: block;
+        font-family: $font-family;
+        color: #6366f1;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        font-family: $font-family;
+        font-weight: 800;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: $color-dark;
+
+        .highlight {
+          color: #6366f1; /* Purple accent for "product designer" */
+        }
+      }
+    }
+
+    .quote-side {
+      flex: 1;
+      max-width: 250px;
+
+      .quote-line {
+        border: 0;
+        border-top: 2px solid $color-dark;
+        width: 30px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-family: $font-family;
+        font-size: 0.85rem;
+        color: $color-muted;
+        line-height: 1.5;
+      }
     }
   }
 
-  /* Home Masonry Grid */
+  /* Masonry Grid */
   .masonry-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 
-    .grid-item {
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
-  /* Quote Section */
-  .quote-section {
-    margin: 50px 0;
-    max-width: 420px;
+  /* Services & Awards Section */
+  .services-awards {
+    margin-top: 80px;
 
-    p {
-      font-family: $font-family;
-      font-size: 0.85rem;
-      color: $color-muted;
-      line-height: 1.6;
+    .services-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+      margin-bottom: 50px;
+
+      .services-heading {
+        flex: 2;
+
+        h2 {
+          font-family: $font-family;
+          font-size: 1.4rem;
+          font-weight: 800;
+          line-height: 1.4;
+          color: $color-dark;
+          max-width: 500px;
+        }
+      }
+
+      .services-columns {
+        flex: 1;
+        display: flex;
+        gap: 40px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            font-family: $font-family;
+            font-size: 0.85rem;
+            color: $color-muted;
+            margin-bottom: 12px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    .section-divider {
+      border: 0;
+      border-top: 1px solid #e0e0e0;
+      margin: 40px 0;
+    }
+
+    /* Awards Table */
+    .awards-table {
+      .award-row {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 2.5fr 0.5fr;
+        align-items: start;
+        padding: 20px 0;
+        font-family: $font-family;
+
+        .award-brand {
+          font-size: 1.1rem;
+          font-weight: 800;
+          color: $color-dark;
+        }
+
+        .award-brand-placeholder {
+          display: block;
+          width: 100%;
+        }
+
+        .award-title {
+          font-size: 0.9rem;
+          font-weight: 700;
+          color: $color-dark;
+        }
+
+        .award-desc {
+          strong {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: $color-dark;
+            margin-bottom: 4px;
+          }
+
+          p {
+            font-size: 0.8rem;
+            color: $color-muted;
+            line-height: 1.4;
+          }
+        }
+
+        .award-year {
+          font-size: 0.85rem;
+          color: $color-muted;
+          text-align: right;
+        }
+      }
     }
   }
 
@@ -51,7 +176,8 @@
     .project-header {
       display: flex;
       justify-content: space-between;
-      gap: 40px;
+      align-items: flex-start;
+      gap: 60px;
       margin-bottom: 40px;
 
       .project-title {
@@ -59,16 +185,10 @@
 
         h1 {
           font-family: $font-family;
-          font-size: 2rem;
+          font-size: 2.2rem;
           font-weight: 800;
-          margin-bottom: 20px;
-        }
-
-        p {
-          font-family: $font-family;
-          color: $color-muted;
-          font-size: 0.9rem;
-          line-height: 1.6;
+          line-height: 1.3;
+          color: $color-dark;
         }
       }
 
@@ -80,12 +200,13 @@
           justify-content: space-between;
           font-family: $font-family;
           font-size: 0.85rem;
-          padding: 8px 0;
-          border-bottom: 1px solid $color-border;
+          padding: 10px 0;
+          border-bottom: 1px solid #e5e5e5;
           color: $color-muted;
 
           strong {
             color: $color-dark;
+            font-weight: 700;
           }
         }
       }
@@ -94,38 +215,155 @@
     .hero-banner img {
       width: 100%;
       height: auto;
-      margin-bottom: 25px;
+      max-height: 500px;
+      object-fit: cover;
+      margin-bottom: 40px;
     }
 
     .project-description {
+      margin-bottom: 40px;
+
       p {
         font-family: $font-family;
         font-size: 0.9rem;
         color: $color-muted;
-        line-height: 1.6;
-        margin-bottom: 20px;
+        line-height: 1.7;
+        max-width: 900px;
       }
     }
 
-    /* 3 Detail Images Gallery */
     .project-gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+      gap: 20px;
 
-      img {
+      .gallery-item {
         width: 100%;
-        height: 220px;
-        object-fit: cover;
+
+        img {
+          width: 100%;
+          height: 260px;
+          object-fit: cover;
+          display: block;
+        }
       }
     }
   }
 
-  /* Contact Page Styles */
+/* Contact Page Styles */
   &.contact-page {
+    .contact-intro {
+      margin-bottom: 40px;
+
+      h1 {
+        font-family: $font-family;
+        font-size: 2.2rem;
+        font-weight: 800;
+        line-height: 1.3;
+        color: $color-dark;
+        margin-bottom: 24px;
+      }
+
+      .contact-action {
+        .contact-btn {
+          font-family: $font-family;
+          font-size: 0.95rem;
+          font-weight: 700;
+          background-color: #6366f1;
+          color: #ffffff;
+          border: none;
+          padding: 12px 28px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: background-color 0.2s ease;
+
+          &:hover {
+            background-color: #4f46e5;
+          }
+
+          i {
+            margin-right: 8px;
+          }
+        }
+
+        .phone-number {
+          margin-top: 15px;
+
+          a {
+            font-family: $font-family;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #6366f1;
+            text-decoration: none;
+          }
+
+          p {
+            font-family: $font-family;
+            font-size: 0.9rem;
+            color: $color-muted;
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+
     .map-section img {
       width: 100%;
       height: auto;
+      border-radius: 8px;
+    }
+  }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .main {
+    .hero-header {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .masonry-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-awards {
+      .services-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .awards-table .award-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+
+        .award-year {
+          text-align: left;
+        }
+      }
+    }
+
+    &.project-page {
+      .project-header {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    .masonry-grid {
+      grid-template-columns: 1fr;
+    }
+
+    &.project-page .project-gallery {
+      grid-template-columns: 1fr;
+      }
     }
   }
 }

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Genesis | Project Details</title>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
@@ -21,40 +21,64 @@
   </header>
 
   <main class="main project-page">
+    
+    <!-- Project Header -->
     <section class="project-header">
       <div class="project-title">
-        <h1>A fresh new title can<br>make all the difference!</h1>
-        <p>There are many variations of passages of Lorem Ipsum available...</p>
+        <h1>A fresh new title can make all the difference!</h1>
       </div>
       <div class="project-meta">
-        <div class="meta-row"><span>Client:</span> <strong>Sunset Studio</strong></div>
-        <div class="meta-row"><span>Date:</span> <strong>May 12, 2023</strong></div>
-        <div class="meta-row"><span>Service:</span> <strong>UI/UX Design</strong></div>
-        <div class="meta-row"><span>Role:</span> <strong>Lead Designer</strong></div>
-        <div class="meta-row"><span>Share:</span> <strong>Facebook, Pinterest</strong></div>
+        <div class="meta-row">
+          <span>Client</span>
+          <strong>Creative Agency</strong>
+        </div>
+        <div class="meta-row">
+          <span>Service</span>
+          <strong>Interaction Design</strong>
+        </div>
+        <div class="meta-row">
+          <span>Date</span>
+          <strong>Spring 2020</strong>
+        </div>
+        <div class="meta-row">
+          <span>Team</span>
+          <strong>Bakhtiyar, Anna, Tom</strong>
+        </div>
       </div>
     </section>
 
-    <!-- Large Top Banner -->
+    <!-- Main Hero Banner Image -->
     <div class="hero-banner">
       <img src="images/hero-banner.jpg" alt="Hero Banner">
     </div>
 
-    <!-- 3 Detail Images Gallery -->
-    <section class="project-gallery">
-      <img src="images/Project Details Image 2.jpg" alt="Project Detail 2">
-      <img src="images/Project Details Image 3.jpg" alt="Project Detail 3">
-      <img src="images/Project Details Image 4.jpg" alt="Project Detail 4">
+    <!-- Description Paragraphs -->
+    <section class="project-description">
+      <p>There is no deny the fact that database strategy is key to success available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. You need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
     </section>
+
+    <!-- 3-Image Gallery Grid -->
+    <section class="project-gallery">
+      <div class="gallery-item"><img src="images/Project Details Image 2.jpg" alt="Detail 2"></div>
+      <div class="gallery-item"><img src="images/Project Details Image 3.jpg" alt="Detail 3"></div>
+      <div class="gallery-item"><img src="images/Project Details Image 4.jpg" alt="Detail 4"></div>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <div class="footer-left">
-      <span class="brand">Genesis</span>
-    </div>
+    <a href="index.html" class="footer-logo">Genesis</a>
+
     <div class="footer-right">
-      <a href="index.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <nav class="footer-nav">
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="social-icons">
+        <a href="#" aria-label="Website"><i class="fas fa-globe"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
   </footer>
 </body>
