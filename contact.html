@@ -3,22 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genesis | Contact</title>
+  
+  <!-- SEO Core Tags -->
+  <title>Genesis Portfolio | Product Design & Digital Experiences</title>
+  <meta name="description" content="Portfolio of Bakhtiyar Sattarov, a product designer with experience in digital experiences, branding, interactive design, and mobile applications.">
+  <meta name="keywords" content="product design, UI/UX design, portfolio, Bakhtiyar Sattarov, interactive design, branding">
+  <meta name="author" content="Bakhtiyar Sattarov">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Genesis Portfolio | Bakhtiyar Sattarov">
+  <meta property="og:description" content="Explore product design projects, award-winning interfaces, and digital experience case studies.">
+  <meta property="og:image" content="images/hero-banner.jpg">
+
+  <!-- External Styles & Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles/index.css">
+  <script src="main.js" defer></script>
+
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">Genesis</a>
-    <nav class="nav">
-      <ul class="nav_list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Project Details</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="header">
+  <a href="index.html" class="logo">Genesis</a>
+
+  <!-- Mobile Hamburger Toggle Button -->
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Navigation Menu -->
+  <nav class="nav" id="navMenu">
+    <ul class="nav_list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="project.html">Project Details</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main class="main contact-page">
   <!-- Contact Intro & Reveal Action -->
@@ -26,9 +49,10 @@
     <h1>Full set of great<br>features to make your<br>product fresh</h1>
     
     <div class="contact-action">
-      <button type="button" class="contact-btn" id="contactBtn" onclick="revealPhoneNumber()">
-        <i class="fas fa-phone-alt"></i> Show Contact Details
-      </button>
+     <!-- Clean button without inline onclick -->
+   <button type="button" class="contact-btn" id="contactBtn">
+  <i class="fas fa-phone-alt"></i> Show Contact Details
+</button> 
 
       <div class="phone-number" id="phoneNumber" style="display: none;">
         <a href="tel:+1234567890">+1 (234) 567-8900</a>
@@ -42,16 +66,6 @@
     <img src="images/Map.jpg" alt="Location Map">
   </section>
 </main>
-
-<script>
-  function revealPhoneNumber() {
-    const btn = document.getElementById('contactBtn');
-    const phone = document.getElementById('phoneNumber');
-    
-    btn.style.display = 'none';
-    phone.style.display = 'block';
-  }
-</script>
 
  <footer class="footer">
   <a href="index.html" class="footer-logo">Genesis</a>
