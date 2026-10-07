@@ -21,35 +21,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles/index.css">
-  <script src="main.js"></script>
-
+  <script src="scripts/script.js" defer></script>
 </head>
 <body>
- <header class="header">
-  <a href="index.html" class="logo">Genesis</a>
+  <header class="header">
+    <a href="index.html" class="logo">Genesis</a>
 
-  <!-- Mobile Hamburger Toggle Button -->
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
-    <i class="fas fa-bars"></i>
-  </button>
+    <!-- Mobile Hamburger Toggle Button -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+      <i class="fas fa-bars"></i>
+    </button>
 
-  <!-- Navigation Menu -->
-  <nav class="nav" id="navMenu">
-    <ul class="nav_list">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="project.html">Project Details</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Navigation Menu -->
+    <nav class="nav" id="navMenu">
+      <ul class="nav_list">
+        <li><a href="pages/project.html">Project Details</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
     
   <main class="main">
     
     <!-- HERO SECTION -->
     <div class="hero-header">
       <div class="hero-title">
-        <span class="tagline">Shooting Stars</span>
-        <h1>Hello, I'm Bakhtiyar Sattarov,<br><span class="highlight">product designer</span> with experience<br>in studios and startups</h1>
+        <p class="tagline"><span>Shooting Stars</span></p>
+        <h1>Hello, I'm Bakhtiyar Sattarov, product designer with experience in studios and startups</h1>
       </div>
       <div class="quote-side">
         <hr class="quote-line" />
@@ -57,27 +55,24 @@
       </div>
     </div>
 
-    <!-- MASONRY GRID (12 IMAGES) -->
+    <!-- MASONRY GRID -->
     <section class="masonry-grid">
-      <div class="grid-item"><img src="images/grid-1.jpg" alt="Work 1"></div>
-      <div class="grid-item"><img src="images/grid-2.jpg" alt="Work 2"></div>
-      <div class="grid-item"><img src="images/grid-3.jpg" alt="Work 3"></div>
-      <div class="grid-item"><img src="images/grid-4.jpg" alt="Work 4"></div>
-      <div class="grid-item"><img src="images/grid-5.jpg" alt="Work 5"></div>
-      <div class="grid-item"><img src="images/grid-6.jpg" alt="Work 6"></div>
-      <div class="grid-item"><img src="images/grid-7.jpg" alt="Work 7"></div>
-      <div class="grid-item"><img src="images/grid-8.jpg" alt="Work 8"></div>
-      <div class="grid-item"><img src="images/grid-9.jpg" alt="Work 9"></div>
-      <div class="grid-item"><img src="images/grid-10.jpg" alt="Work 10"></div>
-      <div class="grid-item"><img src="images/grid-11.jpg" alt="Work 11"></div>
-      <div class="grid-item"><img src="images/grid-12.jpg" alt="Work 12"></div>
-
+      <div class="grid-item"><img src="images/grid-1.jpg" alt="Abstract 3D sculpture render with warm beige tones"></div>
+      <div class="grid-item"><img src="images/grid-2.jpg" alt="Person surrounded by tall cactus plants holding a blue balloon"></div>
+      <div class="grid-item"><img src="images/grid-3.jpg" alt="Person standing on a white hill against a glowing circular backdrop"></div>
+      <div class="grid-item"><img src="images/grid-4.jpg" alt="Minimalist architectural artwork showcase"></div>
+      <div class="grid-item"><img src="images/grid-5.jpg" alt="Creative product branding mockup preview"></div>
+      <div class="grid-item"><img src="images/grid-6.jpg" alt="Digital UI layout component showcase"></div>
+      <div class="grid-item"><img src="images/grid-7.jpg" alt="3D character illustration and composition"></div>
+      <div class="grid-item"><img src="images/grid-8.jpg" alt="Modern mobile app design interface screen"></div>
+      <div class="grid-item"><img src="images/grid-9.jpg" alt="Packaging design typography detail"></div>
+      <div class="grid-item"><img src="images/grid-10.jpg" alt="Interactive web dashboard wireframe"></div>
+      <div class="grid-item"><img src="images/grid-11.jpg" alt="Brand identity design exploration card"></div>
+      <div class="grid-item"><img src="images/grid-12.jpg" alt="Digital art illustration with gradient colors"></div>
     </section>
 
-<!-- SERVICES & AWARDS SECTION -->
+    <!-- SERVICES & AWARDS SECTION -->
     <section class="services-awards">
-      
-      <!-- Services Row -->
       <div class="services-container">
         <div class="services-heading">
           <h2>We love work hard and explore new things that's why we cover lot of things. Check our service list and view details</h2>
@@ -100,55 +95,48 @@
 
       <!-- Awards Section -->
       <div class="awards-table">
-        
-        <!-- Row 1: Awwwards - Site of the day -->
         <div class="award-row">
-          <div class="award-brand">Awwwards</div>
-          <div class="award-title">Site of the day</div>
+          <p class="award-brand">Awwwards</p>
+          <p class="award-title">Site of the day</p>
           <div class="award-desc">
             <strong>Genesis UI Kit</strong>
             <p>Application that helps to find nearest sport centres</p>
           </div>
-          <div class="award-year">2018</div>
+          <p class="award-year">2018</p>
         </div>
 
-        <!-- Row 2: Awwwards - Best navigation -->
         <div class="award-row">
-          <div class="award-brand"></div>
-          <div class="award-title">Best navigation</div>
+          <p class="award-brand"></p>
+          <p class="award-title">Best navigation</p>
           <div class="award-desc">
             <strong>Genesis Template</strong>
             <p>Application that helps to find nearest sport centres</p>
           </div>
-          <div class="award-year">2018</div>
+          <p class="award-year">2018</p>
         </div>
 
         <hr class="section-divider" />
 
-        <!-- Row 3: CSSDesignAwards - Site of the day -->
         <div class="award-row">
-          <div class="award-brand">CSSDesignAwards</div>
-          <div class="award-title">Site of the day</div>
+          <p class="award-brand">CSSDesignAwards</p>
+          <p class="award-title">Site of the day</p>
           <div class="award-desc">
             <strong>Genesis UI Kit</strong>
             <p>Application that helps to find nearest sport centres</p>
           </div>
-          <div class="award-year">2017</div>
+          <p class="award-year">2017</p>
         </div>
 
-        <!-- Row 4: CSSDesignAwards - Best navigation -->
         <div class="award-row">
-          <div class="award-brand"></div>
-          <div class="award-title">Best navigation</div>
+          <p class="award-brand"></p>
+          <p class="award-title">Best navigation</p>
           <div class="award-desc">
             <strong>Genesis Template</strong>
             <p>Application that helps to find nearest sport centres</p>
           </div>
-          <div class="award-year">2016</div>
+          <p class="award-year">2016</p>
         </div>
-
       </div>
-
     </section>
    
   </main>
@@ -158,8 +146,8 @@
 
     <div class="footer-right">
       <nav class="footer-nav">
-        <a href="project.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="pages/project.html">Projects</a>
+        <a href="pages/contact.html">Contact</a>
       </nav>
       <div class="social-icons">
         <a href="#" aria-label="Website"><i class="fas fa-globe"></i></a>
@@ -168,18 +156,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- Toggle JavaScript -->
-  <script>
-    function toggleServices() {
-      const services = document.getElementById('servicesList');
-      services.classList.toggle('active');
-    }
-
-    function toggleAward(id) {
-      const content = document.getElementById(id);
-      content.classList.toggle('active');
-    }
-  </script>
 </body>
 </html>
