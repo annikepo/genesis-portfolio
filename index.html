@@ -24,53 +24,69 @@
   <script src="scripts/script.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">Genesis</a>
+ <header class="header">
+  <a href="index.html" class="logo">Genesis</a>
+  
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+    <i class="fas fa-bars"></i>
+  </button>
 
-    <!-- Mobile Hamburger Toggle Button -->
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
-      <i class="fas fa-bars"></i>
-    </button>
+  <nav class="nav" id="navMenu">
+    <ul class="nav_list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pages/project.html">Projects</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  
+   <main class="main">
+  <!-- HERO SECTION -->
+  <div class="hero-header">
+   <div class="hero-title">
+  <p class="tagline">Shooting Stars</p>
+  <h1>
+    <span>Hello, I'm Bakhtiyar Sattarov,</span>
+    <span class="hero-line-2"><span class="accent-text">product designer</span> with experience</span>
+    <span>in studios and startups</span>
+  </h1>
+</div>
 
-    <!-- Navigation Menu -->
-    <nav class="nav" id="navMenu">
-      <ul class="nav_list">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="pages/project.html">Project Details</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-    
-  <main class="main">
-    
-    <!-- HERO SECTION -->
-    <div class="hero-header">
-      <div class="hero-title">
-        <p class="tagline"><span>Shooting Stars</span></p>
-        <h1>Hello, I'm Bakhtiyar Sattarov, product designer with experience in studios and startups</h1>
-      </div>
-      <div class="quote-side">
-        <hr class="quote-line" />
-        <p>Design is about progress</p>
-      </div>
+    <!-- Right Side Quote -->
+    <div class="quote-side">
+      <span class="quote-line"></span>
+      <p class="quote-text">Design is about progress</p>
+    </div>
+  </div>
+
+<!-- GRID FRAME CONTAINER -->
+<div class="grid-frame">
+  <section class="masonry-grid">
+    <!-- Column 1 -->
+    <div class="masonry-column">
+      <div class="grid-item"><img src="images/grid-1.jpg" alt="Project 1"></div>
+      <div class="grid-item"><img src="images/grid-2.jpg" alt="Project 2"></div>
+      <div class="grid-item"><img src="images/grid-3.jpg" alt="Project 3"></div>
+      <div class="grid-item"><img src="images/grid-4.jpg" alt="Project 4"></div>
     </div>
 
-    <!-- MASONRY GRID -->
-    <section class="masonry-grid">
-      <div class="grid-item"><img src="images/grid-1.jpg" alt="Abstract 3D sculpture render with warm beige tones"></div>
-      <div class="grid-item"><img src="images/grid-2.jpg" alt="Person surrounded by tall cactus plants holding a blue balloon"></div>
-      <div class="grid-item"><img src="images/grid-3.jpg" alt="Person standing on a white hill against a glowing circular backdrop"></div>
-      <div class="grid-item"><img src="images/grid-4.jpg" alt="Minimalist architectural artwork showcase"></div>
-      <div class="grid-item"><img src="images/grid-5.jpg" alt="Creative product branding mockup preview"></div>
-      <div class="grid-item"><img src="images/grid-6.jpg" alt="Digital UI layout component showcase"></div>
-      <div class="grid-item"><img src="images/grid-7.jpg" alt="3D character illustration and composition"></div>
-      <div class="grid-item"><img src="images/grid-8.jpg" alt="Modern mobile app design interface screen"></div>
-      <div class="grid-item"><img src="images/grid-9.jpg" alt="Packaging design typography detail"></div>
-      <div class="grid-item"><img src="images/grid-10.jpg" alt="Interactive web dashboard wireframe"></div>
-      <div class="grid-item"><img src="images/grid-11.jpg" alt="Brand identity design exploration card"></div>
-      <div class="grid-item"><img src="images/grid-12.jpg" alt="Digital art illustration with gradient colors"></div>
-    </section>
+    <!-- Column 2 -->
+    <div class="masonry-column">
+      <div class="grid-item"><img src="images/grid-5.jpg" alt="Project 5"></div>
+      <div class="grid-item"><img src="images/grid-6.jpg" alt="Project 6"></div>
+      <div class="grid-item"><img src="images/grid-7.jpg" alt="Project 7"></div>
+      <div class="grid-item"><img src="images/grid-8.jpg" alt="Project 8"></div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="masonry-column">
+      <div class="grid-item"><img src="images/grid-9.jpg" alt="Project 9"></div>
+      <div class="grid-item"><img src="images/grid-10.jpg" alt="Project 10"></div>
+      <div class="grid-item"><img src="images/grid-11.jpg" alt="Project 11"></div>
+      <div class="grid-item"><img src="images/grid-12.jpg" alt="Project 12"></div>
+    </div>
+  </section>
+</div>
 
     <!-- SERVICES & AWARDS SECTION -->
     <section class="services-awards">
